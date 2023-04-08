@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Score Bord</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex-wrap">
+            <div class="home">
+                <h1>Home</h1>
+                <div class="home-score-bord">
+                    <h1 id="home-score">0</h1>
+                </div>
+                <div class="home-score-points">
+                    <button id="+1" onclick="hincrementby1()" class="point">+1</button>
+                    <button id="+2" onclick="hincrementby2()" class="point">+2</button>
+                    <button id="+3" onclick="hincrementby3()" class="point">+3</button>
+                </div>
+
+            </div>
+            <div class="guest">
+                <h1>Guest</h1>
+                <div class="guest-score-bord">
+                    <h1 id="guest-score">0</h1>
+                </div>
+
+                <div class="guest-score-points">
+                    <button id="+1" onclick="gincrementby1()" class="point">+1</button>
+                    <button id="+2" onclick="gincrementby2()" class="point">+2</button>
+                    <button id="+3" onclick="gincrementby3()" class="point">+3</button>
+                </div>
+            </div>
+
+        </div>
+        <button id="reset" onclick="reset()">Rest</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
